@@ -13,12 +13,13 @@
     "eslint-config-prettier": "~8.3.0",
     "prettier": "~2.4.1",
     "rimraf": "~3.0.2",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "tsutils": "~3.21.0",
     "typescript": "~4.4.4"
   },
   "scripts": {
-    "start": "npm run build && node build/src/main.js",
+    "start": "ts-node src/main.ts",
     "start:js": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
